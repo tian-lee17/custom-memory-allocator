@@ -55,7 +55,7 @@ Run:
 
 ---
 
-##Sample Output
+## Sample Output
 
 Initial State:
 Block 1 -> Size: 1000 | Free: 1
