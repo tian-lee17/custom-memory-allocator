@@ -64,6 +64,7 @@ After allocating 200 bytes:
 Block 1 -> Size: 200 | Free: 0
 Block 2 -> Size: 784 | Free: 1
 
+
 After freeing and coalescing:
 Block 1 -> Size: 1000 | Free: 1
 
