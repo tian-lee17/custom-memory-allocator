@@ -1,9 +1,9 @@
 # Custom Memory Allocator in C
 
 ## Overview
-This project is a simple implementation of a custom memory allocator, similar to `malloc` and `free`, written in C.
+This project implements a custom memory allocator in C, replicating core behavior of `malloc` and `free`.
 
-It demonstrates how memory is managed internally using a linked list of memory blocks.
+It demonstrates low-level memory management using a linked-list based allocator with block splitting and coalescing.
 
 ---
 
@@ -55,7 +55,27 @@ Run:
 
 ---
 
+##Sample Output
+
+Initial State:
+Block 1 -> Size: 1000 | Free: 1
+
+After allocating 200 bytes:
+Block 1 -> Size: 200 | Free: 0
+Block 2 -> Size: 784 | Free: 1
+
+After freeing and coalescing:
+Block 1 -> Size: 1000 | Free: 1
+
+
 ## Learning Outcome
 - Understanding how `malloc` and `free` work internally
 - Pointer arithmetic and memory layout
 - Handling fragmentation in memory allocation
+
+
+## Future Improvements
+- Memory alignment support
+- Best-fit allocation strategy
+- Performance benchmarking
+- Thread safety
